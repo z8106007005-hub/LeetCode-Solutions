@@ -22,4 +22,31 @@ public:
         return v[0].first ;
         
     }
+};/*
+ * ------------------------------------------------------------
+ * LeetSync appended newer accepted solution
+ * LeetSync Update Marker: submission:2001427999
+ * Appended At: 2026-05-14T18:29:03.723Z
+ * ------------------------------------------------------------
+ *//**
+ * Problem: 0169. Majority Element
+ * Difficulty: Easy
+ * URL: https://leetcode.com/problems/majority-element/
+ * Language: cpp
+ * Synced: 2026-05-14T18:29:01.895Z
+ */
+/* LeetSync Update Marker: submission:2001427999 */
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        sort(nums.begin() , nums.end()) ;
+        int count = 0 ; 
+        int flags = nums[0] ; 
+        for(int i = 1 ; i < nums.size() ; i++) {
+            if(nums[i] == nums[i - 1]) count++ , flags = nums[i] ; 
+            else count = 0 ; 
+            if(count >= nums.size() / 2) break ;
+        }
+        return flags ;
+    }
 };
