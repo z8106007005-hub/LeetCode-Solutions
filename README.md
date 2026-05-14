@@ -4,22 +4,22 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-199-blue)
-![Easy](https://img.shields.io/badge/Easy-100-brightgreen)
-![Medium](https://img.shields.io/badge/Medium-92-orange)
+![Total](https://img.shields.io/badge/Total-203-blue)
+![Easy](https://img.shields.io/badge/Easy-101-brightgreen)
+![Medium](https://img.shields.io/badge/Medium-95-orange)
 ![Hard](https://img.shields.io/badge/Hard-7-red)
 
 | Difficulty | Count | Progress |
 |-----------|-------|---------|
-| 🟢 Easy | 100 | ██████████░░░░░░░░░░ |
-| 🟡 Medium | 92 | █████████░░░░░░░░░░░ |
+| 🟢 Easy | 101 | █████████░░░░░░░░░░░ |
+| 🟡 Medium | 95 | █████████░░░░░░░░░░░ |
 | 🔴 Hard | 7 | ░░░░░░░░░░░░░░░░░░░░ |
 
 ## 💻 Languages
 
 | Language | Solutions |
 |----------|-----------|
-| cpp | 199 |
+| cpp | 203 |
 
 ## 📁 Structure
 
@@ -38,4 +38,4 @@ LeetCode-Solutions/
 ```
 
 ---
-*Last updated: Thu, 14 May 2026 18:28:52 GMT*
+*Last updated: Thu, 14 May 2026 18:29:53 GMT*
