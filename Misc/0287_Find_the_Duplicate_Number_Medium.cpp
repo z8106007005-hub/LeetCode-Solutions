@@ -23,4 +23,30 @@ public:
 
         return b[0].first ;
     }
+};/*
+ * ------------------------------------------------------------
+ * LeetSync appended newer accepted solution
+ * LeetSync Update Marker: submission:1861744370
+ * Appended At: 2026-05-14T18:01:30.401Z
+ * ------------------------------------------------------------
+ *//**
+ * Problem: 0287. Find the Duplicate Number
+ * Difficulty: Medium
+ * URL: https://leetcode.com/problems/find-the-duplicate-number/
+ * Language: cpp
+ * Synced: 2026-05-14T18:01:29.971Z
+ */
+/* LeetSync Update Marker: submission:1861744370 */
+#define ll int 
+class Solution {
+public:
+    int findDuplicate(vector<int>& a) {
+        int n = a.size() ;
+        unordered_set<ll> mp ;
+        for(ll i : a) {
+            if(mp.count(i)) return i ;
+            mp.insert(i) ;
+        }
+        return -1 ;
+    }
 };
