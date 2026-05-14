@@ -16,4 +16,32 @@ public:
             }
         }
     }
+};/*
+ * ------------------------------------------------------------
+ * LeetSync appended newer accepted solution
+ * LeetSync Update Marker: submission:2001392929
+ * Appended At: 2026-05-14T18:28:35.658Z
+ * ------------------------------------------------------------
+ *//**
+ * Problem: 0075. Sort Colors
+ * Difficulty: Medium
+ * URL: https://leetcode.com/problems/sort-colors/
+ * Language: cpp
+ * Synced: 2026-05-14T18:28:35.194Z
+ */
+/* LeetSync Update Marker: submission:2001392929 */
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int i = 0 ; 
+        int n = nums.size() ; 
+
+        for(i = 0 ; i < n ; i++) {
+            for(int j = i + 1 ; j < n ; j++) {
+                if(nums[i] > nums[j]) {
+                    swap(nums[i] , nums[j]) ;
+                }
+            }
+        }
+    }
 };
