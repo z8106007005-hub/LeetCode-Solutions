@@ -46,4 +46,37 @@ public:
         }
         return nums[nums.size() - 1] ;
     }
+};/*
+ * ------------------------------------------------------------
+ * LeetSync appended newer accepted solution
+ * LeetSync Update Marker: submission:2000493171
+ * Appended At: 2026-05-14T18:28:19.977Z
+ * ------------------------------------------------------------
+ *//**
+ * Problem: 0136. Single Number
+ * Difficulty: Easy
+ * URL: https://leetcode.com/problems/single-number/
+ * Language: cpp
+ * Synced: 2026-05-14T18:28:19.511Z
+ */
+/* LeetSync Update Marker: submission:2000493171 */
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        // sort(nums.begin() , nums.end()) ; 
+        // for(int i = 1 ; i < nums.size() ; i += 2) {
+        //     if(nums[i] != nums[i - 1]) return nums[i - 1] ; 
+        // }
+        // return nums[nums.size() - 1] ;
+
+        // by sort operation
+
+        int ans = 0 ; 
+
+        for(auto x : nums) {
+            ans ^= x ; 
+
+        }
+        return ans ;
+    }
 };
